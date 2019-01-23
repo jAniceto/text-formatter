@@ -59,6 +59,10 @@ textarea:focus, select:focus {
   outline: 0;
 }
 
+a {
+  color: #1abc9c;
+}
+
 a:hover {
   color: #18ad8f;
 }
