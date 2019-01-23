@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Text Formatter</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+</head>
+  
+<body>
+
+  <div class="container">
+    <!-- Navbar -->
+<!--     <div class="navbar-spacer"></div> -->
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="#">Formatter</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Form -->
+    <div class="section">
+      <h6 class="section-header">Text formatter</h6>
+      <p>Just insert your text bellow and press the button of the format you desire to have. After formatting, <u>text is automatically copied to your clipboard</u>.</p>
+      
+      <div class="">
+        <form>
+          <label for="textBox"></label>
+          <textarea class="u-full-width" placeholder="Enter text here..." id="textBox"></textarea>
+          <div class="btn-group">
+            <input id='lowercase' class="button-green format-btn" type="button" value="lowercase">
+            <input id='uppercase' class="button-green format-btn" type="button" value="UPPERCASE">
+            <input id='sentence' class="button-green format-btn" type="button" value="Sentence case">
+            <input id='capitalize' class="button-green format-btn" type="button" value="Capitalize All">
+            <input id='dashed' class="button-green format-btn" type="button" value="lower-dashed">
+            <input id='clear' class="format-btn" type="button" value="Clear Text">
+            <input id='copy' class="format-btn" type="button" value="Copy to Clipboard">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/text-formatting.js"></script>
+  
+</body>
+</html>
