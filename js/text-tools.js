@@ -31,7 +31,7 @@ document.getElementById("uppercase").onclick = function () {
 
 // Sentence Case Button
 document.getElementById("sentence").onclick = function () { 
-  var text = document.getElementById('textBox').value;
+  var text = document.getElementById('textBox').value.toLowerCase().replace(/-/g, " ");
   
   var n = text.split(".");
   var vfinal = ""
@@ -46,7 +46,7 @@ document.getElementById("sentence").onclick = function () {
   }
   vfinal = vfinal.substring(0, vfinal.length - 1);
 
-  document.getElementById('textBox').value = vfinal.replace(/-/g, " ");
+  document.getElementById('textBox').value = vfinal;
   copyToClipboard();
 };
 

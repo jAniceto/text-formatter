@@ -4,13 +4,14 @@
 
   <!-- META -->
   <meta charset="utf-8">
-  <title>Text Formatter</title>
-  <meta name="description" content="A package of text formatting tools.">
+  <title>JSON Formatter</title>
+  <meta name="description" content="A package of text and JSON formatting tools.">
   <meta name="author" content="José Aniceto">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT -->
+  <!-- FONTS -->
   <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Space+Mono" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -39,16 +40,29 @@
       </div>
     </nav>
 
-    <!-- About -->
+    <!-- Form -->
     <div class="section">
-      <h6 class="section-header">About</h6>
-      <p>This page contains a series of text formatting tools useful for programming.</p>
-      <p>It was created with <a href="http://getskeleton.com" target="_blank">Skeleton</a> CSS framework and pure Javascript.</p>
-      <p>Check my other projects at <a href="https://janiceto.github.io/">janiceto.github.io</a> or at <a href="https://github.com/jAniceto">Github</a>.</p>
+      <h6 class="section-header">JSON formater</h6>
+      
+      <div class="">
+        <form>
+          <label for="jsonBox"></label>
+          <textarea rows="6" class="u-full-width" placeholder="Enter JSON here..." id="jsonBox"></textarea>
+          <div class="btn-group">
+            <input id='prettifyJSON' class="button-green format-btn" type="button" value="Prettify JSON">
+            <input id='minifyJSON' class="button-green format-btn" type="button" value="Minify JSON">
+            <input id='clear' class="format-btn" type="button" value="Clear Text">
+            <input id='copy' class="format-btn" type="button" value="Copy to Clipboard">
+          </div>
+        </form>
+      </div>
     </div>
+
+    <pre><code id="highlighted">Syntax highlighted JSON will appear here...</code></pre>
+
   </div>
 
-  <script src="js/text-formatting.js"></script>
+  <script src="js/json-tools.js"></script>
   
 </body>
 </html>

@@ -17,3 +17,10 @@ Convert any text to:
 ### Built with
 - [Skeleton](http://getskeleton.com) CSS framework 
 - Pure Javascript
+
+
+### To Do:
+
+- [x] JSON formatter
+- [ ] Character count
+- [ ] Word count

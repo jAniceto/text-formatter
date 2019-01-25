@@ -31,9 +31,26 @@
   text-transform: none;
 }
 
+textarea {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9em
+}
+
 #textBox {
   height: 10rem;
 }
+
+#jsonBox {
+  height: 40rem;
+}
+
+/* JSON syntax highliting */
+.string { color: #27ae60; }
+.number { color: #d35400; }
+.boolean { color: #2980b9; }
+.null { color: #8e44ad; }
+.key { color: #c0392b; }
+
 
 .button.button-green, button.button-green, input[type="submit"].button-green, 
 input[type="reset"].button-green, input[type="button"].button-green {
@@ -71,7 +88,7 @@ a:hover {
 /* Larger than phone */
 @media (min-width: 550px) {
   .section {
-    padding: 4rem 0; 
+    padding: 4rem 0 0 0; 
   }
 }
 
