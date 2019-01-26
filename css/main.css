@@ -2,6 +2,10 @@
   max-width: 800px; 
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 .section {
   border-top: 1px solid #eee;
   padding: 4rem 0;
@@ -38,6 +42,7 @@ textarea {
 
 #textBox {
   height: 10rem;
+  margin-bottom: 0;
 }
 
 #jsonBox {
@@ -84,6 +89,19 @@ a:hover {
   color: #18ad8f;
 }
 
+.counts {
+  float: right;
+  font-size: 80%;
+  margin: 0 0 0 20px;
+}
+
+.counts > span {
+font-family: 'Space Mono', monospace;
+}
+
+.clear {
+  clear: both;
+}
 
 /* Larger than phone */
 @media (min-width: 550px) {

@@ -44,24 +44,27 @@
     <div class="section">
       <h6 class="section-header">Text formatter</h6>
       <p>Just insert your text bellow and press the button of the format you desire to have. After formatting, <u>text is automatically copied to your clipboard</u>.</p>
-      
-      <div class="">
-        <form>
-          <label for="textBox"></label>
-          <textarea class="u-full-width" placeholder="Enter text here..." id="textBox"></textarea>
-          <div class="btn-group">
-            <input id='lowercase' class="button-green format-btn" type="button" value="lowercase">
-            <input id='uppercase' class="button-green format-btn" type="button" value="UPPERCASE">
-            <input id='sentence' class="button-green format-btn" type="button" value="Sentence case">
-            <input id='capitalize' class="button-green format-btn" type="button" value="Capitalize All">
-            <input id='dashed' class="button-green format-btn" type="button" value="lower-dashed">
-            <input id='clear' class="format-btn" type="button" value="Clear Text">
-            <input id='copy' class="format-btn" type="button" value="Copy to Clipboard">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+      <form>
+        <label for="textBox"></label>
+        <div id="counts">
+          <p class="counts">Characters: <span id="charCount">0</span></p>
+          <p class="counts">Words: <span id="wordCount">0</span></p>
+        </div>
+        <div class="clear"></div>
+        <textarea class="u-full-width" placeholder="Enter text here..." id="textBox" onkeypress="updateCounts()"></textarea>
+        <div class="btn-group">
+          <input id='lowercase' class="button-green format-btn" type="button" value="lowercase">
+          <input id='uppercase' class="button-green format-btn" type="button" value="UPPERCASE">
+          <input id='sentence' class="button-green format-btn" type="button" value="Sentence case">
+          <input id='capitalize' class="button-green format-btn" type="button" value="Capitalize All">
+          <input id='dashed' class="button-green format-btn" type="button" value="lower-dashed">
+          <input id='clear' class="format-btn" type="button" value="Clear Text">
+          <input id='copy' class="format-btn" type="button" value="Copy to Clipboard">
+        </div>
+      </form>
+    </div><!-- section -->
+
+  </div><!-- container -->
 
   <script src="js/text-tools.js"></script>
   

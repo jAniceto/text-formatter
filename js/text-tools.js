@@ -9,6 +9,22 @@ function copyToClipboard() {
     document.selection.empty();
   }
 }
+
+
+// Live update character and word count
+function updateCounts() {
+  text = document.getElementById('textBox').value;
+  var charCount = text.length + 1;
+  var wordCount = text.split(' ').length;
+
+  document.getElementById('charCount').innerHTML = charCount;
+  document.getElementById('wordCount').innerHTML = wordCount;
+}
+
+function resetCounts() {
+  document.getElementById('charCount').innerHTML = 0;
+  document.getElementById('wordCount').innerHTML = 0;
+}
   
   
 // Lowercase Button
@@ -79,6 +95,7 @@ document.getElementById("dashed").onclick = function () {
 // Clear Button
 document.getElementById("clear").onclick = function () { 
   document.getElementById('textBox').value = '';
+  resetCounts();
 };
 
 
